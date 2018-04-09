@@ -1,0 +1,260 @@
+@import "animate.css";
+@mixin Navfont{
+  width: 120px;
+  height: 38px;
+  text-align: center;
+  font: {
+    size: 18px;
+    family: "微软雅黑";
+  };
+}
+@mixin Photo{
+  width: 40px;
+  height: 100%;
+  position: absolute;
+}
+html, body, #root, .App{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-width: 1200px;
+}
+.App {
+  .Nav {
+    position: absolute;
+    transition: .5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    z-index: 9;
+    color: #FFFFFF;
+    img {
+      width: 159px;
+      margin: {
+        left: 100px;
+        top: 30px;
+      };
+    }
+    .right {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      top: 30px;
+      margin-left: auto;
+      margin-right: 100px;
+      line-height: 38px;
+      .item {
+        cursor:pointer;
+        @include Navfont;
+        a {
+          display: none;
+          position: relative;
+          animation-duration: .5s;
+          animation-delay: 250ms;
+          animation-iteration-count: 1;
+          height: 38px;
+          border: 0px solid #ffffff;
+          background-color: rgba(255, 255, 255, 0.3);
+          text-align: center;
+          color: #ffffff;
+          font: {
+            size: 16px;
+            family: "微软雅黑";
+          }
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+          }
+        }
+          &:hover {
+            border: 0px solid #ffffff;
+            background-color:rgba(255,255,255,0.3);
+            border-radius: 5px;
+            a{
+              display: block;
+            }
+        }
+      }
+        .active {
+          border: 0px solid #ffffff;
+          background-color:rgba(255,255,255,0.3);
+          border-radius: 5px;
+        }
+
+      }
+    }
+  .scroll {
+    position: fixed;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    color: black;
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: 100px;
+      line-height: 38px;
+      .item {
+        cursor: pointer;
+        @include Navfont;
+        a {
+          display: none;
+          position: relative;
+          height: 38px;
+          border: 0px solid #ffffff;
+          animation-duration: .5s;
+          animation-delay: 250ms;
+          animation-iteration-count: 1;
+          background-color: rgba(255, 255, 255, 1);
+          text-align: center;
+          color: #000000;
+          font: {
+            size: 16px;
+            family: "微软雅黑";
+          }
+          &:hover {
+            color: darkorange;
+            background-color: #FFFFFF;
+          }
+        }
+        &:hover {
+          color: darkorange;
+          a {
+            display: block;
+          }
+        }
+      }
+      .active {
+        color: darkorange;
+      }
+    }
+  }
+    .footer {
+      position: relative;
+      bottom: 0px;
+      margin: 0px;
+      right: 0px;
+      .img {
+        width: 100%;
+      }
+      .content {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        width: 50%;
+        margin: auto;
+        height: 113px;
+        p {
+          color: #fff;
+          font-size: 16px;
+          line-height: 28px;
+          margin: 0;
+        }
+      }
+      .photo {
+        position: absolute;
+        top: 180px;
+        left: 74%;
+        width: 26%;
+        height: 34px;
+        margin: auto;
+        .qq {
+          margin-left: 10%;
+          @include Photo;
+          cursor:pointer;
+          .qqInfo{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 120px;
+            height: 100px;
+            top: -115px;
+            left: -46px;
+            text-align: center;
+            p{
+              padding-top: 10px;
+              font-size: 16px;
+              font-weight: bold;
+            }
+            span{
+              padding-top: 10px;
+              font-size: 14px;
+            }
+            .inner{
+              position:relative;
+              left:52px;
+              top:100px;
+              height: 0px;
+              width: 0px;
+              border-right: 10px solid transparent;
+              border-top: 10px solid #fafafa;
+              border-left: 10px solid transparent;
+            }
+          }
+            &:hover {
+              img{
+                opacity: 0.6;
+              }
+              .qqInfo{
+                display: block;
+              }
+            }
+        }
+        .weixin {
+          margin-left: 30%;
+          @include Photo;
+          cursor:pointer;
+          .weixinInfo{
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 120px;
+            height: 140px;
+            top: -155px;
+            left: -46px;
+            text-align: center;
+            .inner{
+              width:0px;
+              height:0px;
+              position:relative;
+              left:52px;
+              top:140px;
+              border-right: 10px solid transparent;
+              border-top: 10px solid #fafafa;
+              border-left: 10px solid transparent;
+              span{
+                font-size: 16px;
+                font-weight: bold;
+              }
+            }
+          }
+          &:hover {
+            .weixinIcon{
+              opacity: 0.6;
+            }
+            .weixinInfo{
+              display: block;
+            }
+          }
+        }
+        .weibo {
+          margin-left: 50%;
+          @include Photo;
+          cursor:pointer;
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+
+    }
+
+}

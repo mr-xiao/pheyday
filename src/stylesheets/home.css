@@ -1,0 +1,357 @@
+@charset "UTF-8";
+@import url(~antd/dist/antd.css);
+@import url(animate.css);
+body {
+  margin: 0px;
+  padding: 0px; }
+
+.home .bg {
+  position: relative;
+  padding: 0px;
+  top: 0px;
+  margin: 0px; }
+  .home .bg img {
+    width: 100%; }
+  .home .bg .title {
+    position: absolute;
+    transition: .5s;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    color: #FFFFFF;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .home .bg .title .title1 span {
+      margin-right: 30px;
+      font-size: 50px;
+      font-family: 微软雅黑; }
+    .home .bg .title p {
+      font-size: 28px;
+      font-family: 微软雅黑; }
+.home .basisItem {
+  position: relative;
+  width: 100%;
+  background-color: #e9e9e9; }
+  .home .basisItem .itemLocation {
+    position: relative;
+    margin-left: 30%;
+    width: 40%;
+    text-align: center; }
+    .home .basisItem .itemLocation .top {
+      padding-top: 80px;
+      color: #000000;
+      font-size: 26px;
+      font-family: 微软雅黑; }
+    .home .basisItem .itemLocation .imgContainer {
+      display: inline-flex;
+      align-items: center; }
+      .home .basisItem .itemLocation .imgContainer:before, .home .basisItem .itemLocation .imgContainer:after {
+        content: "";
+        height: 1px;
+        background-color: #cccccc;
+        width: 59px; }
+      .home .basisItem .itemLocation .imgContainer img {
+        margin: 24px 15px 26px;
+        width: 18px; }
+  .home .basisItem .itemMain.style1 {
+    position: relative;
+    padding-bottom: 80px; }
+    .home .basisItem .itemMain.style1 p {
+      margin: 0;
+      text-align: center;
+      color: #606060;
+      font-size: 16px;
+      line-height: 28px;
+      font-family: 微软雅黑; }
+  .home .basisItem .itemMain.style2 {
+    position: relative;
+    padding-bottom: 80px;
+    top: 50px;
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    height: 500px; }
+    .home .basisItem .itemMain.style2 .item {
+      cursor: pointer;
+      color: white;
+      position: relative;
+      width: 600px;
+      transition: .5s;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+      height: 400px; }
+      .home .basisItem .itemMain.style2 .item .theme {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 48%;
+        font-size: 24px;
+        font-family: 微软雅黑; }
+      .home .basisItem .itemMain.style2 .item:first-child {
+        background: url("../images/bg3.png") no-repeat center/cover; }
+      .home .basisItem .itemMain.style2 .item:last-child {
+        background: url("../images/bg2.png") no-repeat center/cover; }
+      .home .basisItem .itemMain.style2 .item .info {
+        display: none;
+        position: absolute;
+        transition: 1s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: rgba(225, 225, 225, 0.85); }
+        .home .basisItem .itemMain.style2 .item .info p {
+          text-align: center;
+          line-height: 10px;
+          color: #606060;
+          position: relative;
+          top: 100px;
+          font-size: 14px;
+          font-family: 微软雅黑; }
+      .home .basisItem .itemMain.style2 .item:hover .theme {
+        display: none; }
+      .home .basisItem .itemMain.style2 .item:hover .info {
+        display: block; }
+  .home .basisItem .itemMain.style3.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 436px; }
+    .home .basisItem .itemMain.style3.swiper-container img {
+      width: 100%; }
+    .home .basisItem .itemMain.style3.swiper-container .swiper-button-prev {
+      margin-left: 60px; }
+    .home .basisItem .itemMain.style3.swiper-container .swiper-button-next {
+      margin-right: 60px; }
+    .home .basisItem .itemMain.style3.swiper-container .swiper-pagination-bullet {
+      background: #cccccc; }
+    .home .basisItem .itemMain.style3.swiper-container .swiper-pagination-bullet-active {
+      background: #FFFFFF; }
+    .home .basisItem .itemMain.style3.swiper-container .example {
+      position: absolute;
+      top: 120px;
+      left: 10%;
+      line-height: 10px;
+      text-align: left;
+      color: #FFFFFF;
+      font-size: 16px; }
+      .home .basisItem .itemMain.style3.swiper-container .example .first {
+        font-size: 18px;
+        padding-bottom: 30px; }
+  .home .basisItem .itemMain.style4 {
+    position: relative;
+    padding-bottom: 80px;
+    top: 50px; }
+    .home .basisItem .itemMain.style4 .picture {
+      position: relative;
+      left: 5%;
+      width: 45%;
+      height: 330px;
+      background: url("../images/bg.png") no-repeat center;
+      background-size: 100% 100%; }
+      .home .basisItem .itemMain.style4 .picture .title {
+        position: absolute;
+        height: 80px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        top: 250px; }
+        .home .basisItem .itemMain.style4 .picture .title p {
+          color: white;
+          font-size: 20px;
+          font-family: 微软雅黑;
+          padding-top: 20px;
+          padding-left: 20px; }
+    .home .basisItem .itemMain.style4 .news {
+      position: relative;
+      left: 50%;
+      top: -330px;
+      width: 40%;
+      margin-left: 5%; }
+      .home .basisItem .itemMain.style4 .news .newsFont .ant-tabs-bar .ant-tabs-tab {
+        margin-bottom: 0;
+        font-size: 15px; }
+      .home .basisItem .itemMain.style4 .news .newsFont .ant-tabs-nav-scroll {
+        border-bottom: 1px inset #000000; }
+  .home .basisItem .itemMain.style5 {
+    position: relative;
+    top: 50px;
+    padding-bottom: 100px; }
+    .home .basisItem .itemMain.style5 .teamwork {
+      position: relative;
+      left: 10%;
+      width: 80%; }
+      .home .basisItem .itemMain.style5 .teamwork .row1 {
+        position: relative;
+        width: 100%;
+        height: 30%; }
+        .home .basisItem .itemMain.style5 .teamwork .row1 .yingZhou {
+          padding: 5% 5%;
+          margin: 0px;
+          height: 100%;
+          background: url("../images/logo/yingzhou.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row1 .yingZhou:hover {
+            background: url("../images/logo/yingzhou_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+        .home .basisItem .itemMain.style5 .teamwork .row1 .huanQiu {
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/huanqiu.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row1 .huanQiu:hover {
+            background: url("../images/logo/huanqiu_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+        .home .basisItem .itemMain.style5 .teamwork .row1 .daMai {
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/damai.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row1 .daMai:hover {
+            background: url("../images/logo/damai_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+        .home .basisItem .itemMain.style5 .teamwork .row1 .guoBo {
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/guobo.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row1 .guoBo:hover {
+            background: url("../images/logo/guobo_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+      .home .basisItem .itemMain.style5 .teamwork .row2 {
+        position: relative;
+        margin-top: 5%;
+        width: 100%;
+        height: 30%; }
+        .home .basisItem .itemMain.style5 .teamwork .row2 .yongLe {
+          height: 100%;
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/yongle.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row2 .yongLe:hover {
+            background: url("../images/logo/yongle_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+        .home .basisItem .itemMain.style5 .teamwork .row2 .wanHao {
+          height: 100%;
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/wanhao.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row2 .wanHao:hover {
+            background: url("../images/logo/wanhao_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+        .home .basisItem .itemMain.style5 .teamwork .row2 .ZSY {
+          height: 100%;
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/zhongguoshiyou.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row2 .ZSY:hover {
+            background: url("../images/logo/zhongguoshiyou_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+        .home .basisItem .itemMain.style5 .teamwork .row2 .keGou {
+          height: 100%;
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/kegou.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row2 .keGou:hover {
+            background: url("../images/logo/kegou_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+      .home .basisItem .itemMain.style5 .teamwork .row3 {
+        position: relative;
+        margin-top: 5%;
+        width: 100%;
+        height: 30%; }
+        .home .basisItem .itemMain.style5 .teamwork .row3 .zhongLv {
+          height: 100%;
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/zhonglv.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row3 .zhongLv:hover {
+            background: url("../images/logo/zhonglv_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+        .home .basisItem .itemMain.style5 .teamwork .row3 .wuYiShan {
+          height: 100%;
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/wuyishan.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row3 .wuYiShan:hover {
+            background: url("../images/logo/wuyishan_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+        .home .basisItem .itemMain.style5 .teamwork .row3 .huanLeDi {
+          height: 100%;
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/huanledi.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row3 .huanLeDi:hover {
+            background: url("../images/logo/huanledi_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+        .home .basisItem .itemMain.style5 .teamwork .row3 .youChang {
+          height: 100%;
+          padding: 5% 5%;
+          margin: 0px;
+          background: url("../images/logo/youchang.png") no-repeat center;
+          background-size: 70% 70%;
+          transition: 1s;
+          animation-delay: 0s;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out; }
+          .home .basisItem .itemMain.style5 .teamwork .row3 .youChang:hover {
+            background: url("../images/logo/youchang_hover.png") no-repeat center;
+            background-size: 70% 70%; }
+
+/*# sourceMappingURL=home.css.map */

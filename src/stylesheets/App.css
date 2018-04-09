@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import url(animate.css);
+html, body, #root, .App {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-width: 1200px; }
+
+.App .Nav {
+  position: absolute;
+  transition: .5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  z-index: 9;
+  color: #FFFFFF; }
+  .App .Nav img {
+    width: 159px;
+    margin-left: 100px;
+    margin-top: 30px; }
+  .App .Nav .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    margin-left: auto;
+    margin-right: 100px;
+    line-height: 38px; }
+    .App .Nav .right .item {
+      cursor: pointer;
+      width: 120px;
+      height: 38px;
+      text-align: center;
+      font-size: 18px;
+      font-family: "微软雅黑"; }
+      .App .Nav .right .item a {
+        display: none;
+        position: relative;
+        animation-duration: .5s;
+        animation-delay: 250ms;
+        animation-iteration-count: 1;
+        height: 38px;
+        border: 0px solid #ffffff;
+        background-color: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: "微软雅黑"; }
+        .App .Nav .right .item a:hover {
+          background-color: rgba(255, 255, 255, 0.6); }
+      .App .Nav .right .item:hover {
+        border: 0px solid #ffffff;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px; }
+        .App .Nav .right .item:hover a {
+          display: block; }
+    .App .Nav .right .active {
+      border: 0px solid #ffffff;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 5px; }
+.App .scroll {
+  position: fixed;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  color: black; }
+  .App .scroll .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 100px;
+    line-height: 38px; }
+    .App .scroll .right .item {
+      cursor: pointer;
+      width: 120px;
+      height: 38px;
+      text-align: center;
+      font-size: 18px;
+      font-family: "微软雅黑"; }
+      .App .scroll .right .item a {
+        display: none;
+        position: relative;
+        height: 38px;
+        border: 0px solid #ffffff;
+        animation-duration: .5s;
+        animation-delay: 250ms;
+        animation-iteration-count: 1;
+        background-color: white;
+        text-align: center;
+        color: #000000;
+        font-size: 16px;
+        font-family: "微软雅黑"; }
+        .App .scroll .right .item a:hover {
+          color: darkorange;
+          background-color: #FFFFFF; }
+      .App .scroll .right .item:hover {
+        color: darkorange; }
+        .App .scroll .right .item:hover a {
+          display: block; }
+    .App .scroll .right .active {
+      color: darkorange; }
+.App .footer {
+  position: relative;
+  bottom: 0px;
+  margin: 0px;
+  right: 0px; }
+  .App .footer .img {
+    width: 100%; }
+  .App .footer .content {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 50%;
+    margin: auto;
+    height: 113px; }
+    .App .footer .content p {
+      color: #fff;
+      font-size: 16px;
+      line-height: 28px;
+      margin: 0; }
+  .App .footer .photo {
+    position: absolute;
+    top: 180px;
+    left: 74%;
+    width: 26%;
+    height: 34px;
+    margin: auto; }
+    .App .footer .photo .qq {
+      margin-left: 10%;
+      width: 40px;
+      height: 100%;
+      position: absolute;
+      cursor: pointer; }
+      .App .footer .photo .qq .qqInfo {
+        display: none;
+        position: absolute;
+        background-color: white;
+        width: 120px;
+        height: 100px;
+        top: -115px;
+        left: -46px;
+        text-align: center; }
+        .App .footer .photo .qq .qqInfo p {
+          padding-top: 10px;
+          font-size: 16px;
+          font-weight: bold; }
+        .App .footer .photo .qq .qqInfo span {
+          padding-top: 10px;
+          font-size: 14px; }
+        .App .footer .photo .qq .qqInfo .inner {
+          position: relative;
+          left: 52px;
+          top: 100px;
+          height: 0px;
+          width: 0px;
+          border-right: 10px solid transparent;
+          border-top: 10px solid #fafafa;
+          border-left: 10px solid transparent; }
+      .App .footer .photo .qq:hover img {
+        opacity: 0.6; }
+      .App .footer .photo .qq:hover .qqInfo {
+        display: block; }
+    .App .footer .photo .weixin {
+      margin-left: 30%;
+      width: 40px;
+      height: 100%;
+      position: absolute;
+      cursor: pointer; }
+      .App .footer .photo .weixin .weixinInfo {
+        display: none;
+        position: absolute;
+        background-color: white;
+        width: 120px;
+        height: 140px;
+        top: -155px;
+        left: -46px;
+        text-align: center; }
+        .App .footer .photo .weixin .weixinInfo .inner {
+          width: 0px;
+          height: 0px;
+          position: relative;
+          left: 52px;
+          top: 140px;
+          border-right: 10px solid transparent;
+          border-top: 10px solid #fafafa;
+          border-left: 10px solid transparent; }
+          .App .footer .photo .weixin .weixinInfo .inner span {
+            font-size: 16px;
+            font-weight: bold; }
+      .App .footer .photo .weixin:hover .weixinIcon {
+        opacity: 0.6; }
+      .App .footer .photo .weixin:hover .weixinInfo {
+        display: block; }
+    .App .footer .photo .weibo {
+      margin-left: 50%;
+      width: 40px;
+      height: 100%;
+      position: absolute;
+      cursor: pointer; }
+      .App .footer .photo .weibo:hover {
+        opacity: 0.6; }
+
+/*# sourceMappingURL=App.css.map */
